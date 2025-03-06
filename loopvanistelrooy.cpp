@@ -4,12 +4,8 @@ using namespace std;
 int main()
 {
     char my_string[]="Hello\0, World!";
-    for(int i=0;i<sizeof(my_string);i++)
+    for(int i=0;my_string[i]!='\0';i++)
     {
-        if(my_string[i]=='\0')
-        {
-            break;
-        }
         cout << my_string[i];
     }
     return 0;
