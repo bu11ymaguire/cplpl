@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    char args[75] = "Hello World!";
+    char args[75] = "Hello World!"; //문자열의 끝에는 항상 '\0'이 위치한다!
     for (int i=0; i<75;i++)
     {
         if (args[i]==0){
