@@ -12,5 +12,6 @@ int main()
             cout << args[i] << endl;
         }
     }
+    cout << sizeof(args) << endl;
     return 0;
 }
