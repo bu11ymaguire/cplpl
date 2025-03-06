@@ -3,10 +3,14 @@ using namespace std;
 
 int main()
 {
-    char my_string[]="Hello\0, World!";
-    for(int i=0;my_string[i]!='\0';i++)
+    int i=0;
+    while(true)
     {
-        cout << my_string[i];
+        if(i==11){
+            break;
+        }
+        cout<<i <<endl;
+        i++;
     }
     return 0;
 }
