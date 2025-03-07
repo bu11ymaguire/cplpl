@@ -1,16 +1,17 @@
 #include <iostream>
-using namespace std; //std::을 생략해주는 구문문
+#include <random>
+using namespace std;
 
 int main()
 {
     random_device rd;
-    mt_19937 gen(rd());
-    uniform_int__distribution<> distrib(1,99);
+    mt19937 gen(rd());
+    uniform_int_distribution<> distrib(1, 99);
 
     int number = distrib(gen);
-    int i=1;
+    int i = 1;
 
-    while()
+    while(true)
     {
         int integer;
         cout << "Enter the Number:";
@@ -22,11 +23,11 @@ int main()
         }
         else if(number >integer)
         {
-            cout << "2 small. Try again" >> endl;
+            cout << "2 small. Try again" << endl;
         }
         else 
         {
-            cout << "2 large. Try agian" >> endl;
+            cout << "2 large. Try agian" << endl;
         }
         i++;
     }
