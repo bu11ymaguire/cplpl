@@ -9,7 +9,7 @@ int main()
     cout << &a << endl;
     cout << a << endl; //10
     cout << *b << endl; //b가 가리키는 메모리 주소의 저장된 값 == 10
-    cout << size_t(b) << endl;
+    cout << size_t(b) << endl; //16진수 메모리 주소를 10진수로 알아보기 쉽게
     b++;
     cout << "Phase2" <<endl;
     if (b==&a)
