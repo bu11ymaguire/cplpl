@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std;
+using namespace std; //std::을 생략해주는 구문문
 
 int main()
 {
