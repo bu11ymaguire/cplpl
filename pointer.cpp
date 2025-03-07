@@ -20,7 +20,7 @@ int main()
     {
         cout << size_t(b) <<" "<< size_t(&a) << endl; 
         //b가 가리키는 메모리 주소와 a의 메모리 주소가 sizeof(int)만큼 차이남.
-        cout << *b<<" "<< a << endl;
+        cout << *b<<" "<< a << endl; //*b도 더이상 10을 가리키지 않음을 확인할 수 있음
     }
     return 0;
 }
