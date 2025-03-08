@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-bool boolymaguire(char A[],char B[]);
+bool boolymaguire(char *A,char *B);
 
 int main()
 {
@@ -17,11 +17,12 @@ int main()
     }
 }
 
-bool boolymaguire(char A[],char B[])
+bool boolymaguire(char *A,char *B)
 {
+    int c;
     if (sizeof(A)!=sizeof(B))
     {
-        return false;
+        c=1;
     }
     else 
     {
@@ -29,13 +30,13 @@ bool boolymaguire(char A[],char B[])
         {
             if((i==sizeof(A))&&(A[i]==B[i]))
             {
-                return true;
+                c=0;
             }
             else
             {
                 if(A[i]!=B[i])
                 {
-                    return false;
+                    c=1;
                 }
                 else 
                 {
@@ -43,5 +44,13 @@ bool boolymaguire(char A[],char B[])
                 }
             }
         }
+    }
+    if (c==0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
     }
 }
