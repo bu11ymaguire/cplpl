@@ -3,16 +3,14 @@ using namespace std;
 int strlen(char *A);
 bool boolymaguire(char *A,char *B);
 
-int strlen(char *A)
+int length(char *A)
 {
-    int len;
-    for(len=0;;len++)
+    int len=0;
+    while(A[len]!=0)
     {
-        if(A[len]=='/0')
-        {
-            return len;
-        }
+     len++;   
     }
+    return len;
 }
 
 int main()
