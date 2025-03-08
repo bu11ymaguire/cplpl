@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int strlen(char *A);
+int length(char *A);
 bool boolymaguire(char *A,char *B);
 
 int length(char *A)
@@ -38,7 +38,7 @@ bool boolymaguire(char *A,char *B)
     }
     else 
     {
-        for(int i=0;i<=a;i++)
+        for(int i=0;i<a;i++)
         {
             if(A[i]!=B[i])
             {
