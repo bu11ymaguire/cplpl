@@ -6,7 +6,7 @@ bool boolymaguire(char *A,char *B);
 int length(char *A)
 {
     int len=0;
-    while(A[len]!=0)
+    while(A[len]!=0) //while을 이용하면 편함.
     {
      len++;   
     }
@@ -30,38 +30,21 @@ int main()
 
 bool boolymaguire(char *A,char *B)
 {
-    int c;
-    if (sizeof(A)!=sizeof(B))
-    {
-        c=1;
-    }
-    else 
-    {
-        for (int i=0;i<=sizeof(A);i++)
-        {
-            if((i==sizeof(A))&&(A[i]==B[i]))
-            {
-                c=0;
-            }
-            else
-            {
-                if(A[i]!=B[i])
-                {
-                    c=1;
-                }
-                else 
-                {
-                    continue;
-                }
-            }
-        }
-    }
-    if (c==0)
-    {
-        return true;
-    }
-    else
+    int a = length(A);
+    int b = length(B);
+    if(a!=b)
     {
         return false;
     }
+    else 
+    {
+        for(int i=0;i<=a;i++)
+        {
+            if(A[i]!=B[i])
+            {
+                return false;
+            }
+        }
+    }
+    return true;
 }
