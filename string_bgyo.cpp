@@ -1,6 +1,19 @@
 #include <iostream>
 using namespace std;
+int strlen(char *A);
 bool boolymaguire(char *A,char *B);
+
+int strlen(char *A)
+{
+    int len;
+    for(len=0;;len++)
+    {
+        if(A[len]=='/0')
+        {
+            return len;
+        }
+    }
+}
 
 int main()
 {
